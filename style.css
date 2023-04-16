@@ -58,6 +58,15 @@ body {
   .content__body {
     text-align: left;
   }
+  .register {
+    align-items: self-start;
+  }
+  .social-media {
+    text-align: center;
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+    align-self: self-end;
+  }
 }
 .content__title img {
   width: 10rem;
@@ -78,12 +87,26 @@ body {
 .register {
   margin: 1rem;
   display: block;
-  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.7rem;
   width: 12rem;
   border: none;
   border-radius: 2rem;
   background-color: #fff;
   color: var(--clr-violet);
+}
+
+.media-icon {
+  border: 1px solid #fff;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  padding-top: 0.85rem;
+  border-radius: 50%;
+}
+.media-icon i {
+  font-size: 1.2rem;
 }
 .attribution {
   font-size: 11px;
