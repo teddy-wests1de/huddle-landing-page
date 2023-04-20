@@ -56,12 +56,10 @@ body {
     grid-area: image;
     /* max-width: 1000px; */
     margin-top: 5rem;
-    border: 1px solid red;
   }
   .content__text {
     grid-area: text;
     width: 450px;
-    border: 1px solid red;
   }
   .content__text h1 {
     text-align: left;
@@ -74,7 +72,6 @@ body {
   }
   .social-media {
     grid-area: social;
-    border: 1px solid red;
     justify-content: flex-end;
   }
   .social-media ul {
