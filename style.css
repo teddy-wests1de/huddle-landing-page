@@ -23,12 +23,18 @@ body {
   color: #fff;
   min-height: 100vh;
 }
+.content__title {
+  margin: 1rem;
+}
 .content {
-  min-width: 345px;
   display: grid;
+  grid-template-areas:
+    "image"
+    "text";
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  gap: 1rem;
+  margin: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -37,20 +43,25 @@ body {
     background-position: left;
   }
   .content {
+    grid-template-areas:
+      "image text"
+      "... social";
     max-width: 1440px;
-    justify-content: space-around;
+    align-items: center;
   }
   .content__title {
     margin-bottom: 2rem;
   }
   .content__image {
-    grid-column: 1 / 1;
-    max-width: 680px;
+    grid-area: image;
+    /* max-width: 1000px; */
     margin-top: 5rem;
+    border: 1px solid red;
   }
   .content__text {
-    grid-column: 2 / 2;
+    grid-area: text;
     width: 450px;
+    border: 1px solid red;
   }
   .content__text h1 {
     text-align: left;
@@ -62,14 +73,19 @@ body {
     align-items: self-start;
   }
   .social-media {
-    text-align: center;
-    grid-column: 2 / 2;
-    grid-row: 3 / 3;
-    align-self: self-end;
+    grid-area: social;
+    border: 1px solid red;
+    justify-content: flex-end;
+  }
+  .social-media ul {
+    justify-content: flex-end;
   }
 }
 .content__title img {
   width: 10rem;
+}
+.content__image {
+  grid-area: image;
 }
 .content__image img {
   width: 100%;
@@ -77,6 +93,7 @@ body {
 }
 /*  */
 .content__text {
+  grid-area: text;
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -86,29 +103,42 @@ body {
 }
 .register {
   margin: 1rem;
-  display: block;
   font-size: 1rem;
   font-weight: 400;
-  padding: 0.7rem;
+  padding: 0.5rem;
   width: 12rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1.8rem;
   background-color: #fff;
   color: var(--clr-violet);
+  text-decoration: none;
 }
-
-.media-icon {
+.social-media ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.social-media li {
   border: 1px solid #fff;
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  padding-top: 0.85rem;
+  /* display: inline-block; */
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  padding-top: 0.55rem;
   border-radius: 50%;
+  align-content: center;
+  justify-content: center;
+}
+.social-media li a {
+  color: #fff;
 }
 .media-icon i {
   font-size: 1.2rem;
 }
 .attribution {
+  margin-top: 2rem;
   font-size: 11px;
   text-align: center;
 }

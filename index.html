@@ -21,14 +21,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="content__title">
+      <img src="./images/logo.svg" alt="Huddle Logo" />
+    </header>
     <main class="content">
-      <section class="content__title">
-        <img src="./images/logo.svg" alt="Huddle Logo" />
-      </section>
-      <section class="content__image">
-        <img src="./images/illustration-mockups.svg" alt="Illustration" />
-      </section>
-      <section class="content__text">
+      <div class="content__image">
+        <img
+          src="./images/illustration-mockups.svg"
+          alt="Mocukup Illustration"
+        />
+      </div>
+      <div class="content__text">
         <h1 class="content__heading">
           Build The Community Your Fans Will Love
         </h1>
@@ -37,13 +40,21 @@
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
-        <button class="register">Register</button>
-      </section>
-      <section class="social-media">
-        <div class="media-icon"><i class="fa-brands fa-facebook-f"></i></div>
-        <div class="media-icon"><i class="fa-brands fa-twitter"></i></div>
-        <div class="media-icon"><i class="fa-brands fa-instagram"></i></div>
-      </section>
+        <a href="#" class="register">Register</a>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li class="media-icon">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li class="media-icon">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="media-icon">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
     </main>
 
     <footer>
