@@ -50,12 +50,10 @@ body {
     align-items: center;
   }
   .content__title {
-    margin-bottom: 2rem;
+    margin: 5rem 0 2rem 10rem;
   }
   .content__image {
     grid-area: image;
-    /* max-width: 1000px; */
-    margin-top: 5rem;
   }
   .content__text {
     grid-area: text;
@@ -75,7 +73,8 @@ body {
     justify-content: flex-end;
   }
   .social-media ul {
-    justify-content: flex-end;
+    display: flex;
+    justify-content: end;
   }
 }
 .content__title img {
