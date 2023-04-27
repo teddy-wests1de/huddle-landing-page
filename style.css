@@ -20,6 +20,7 @@ body {
   background-image: url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: contain;
   color: #fff;
   min-height: 100vh;
 }
@@ -40,7 +41,7 @@ body {
 @media (min-width: 600px) {
   body {
     background-image: url("./images/bg-desktop.svg");
-    background-position: left;
+    background-size: cover;
   }
   .content {
     grid-template-areas:
@@ -50,9 +51,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem 5rem;
+    width: 80vw;
+    margin: 0 auto;
   }
   .content__title {
-    margin: 6rem 0 2rem 7rem;
+    /* margin: 6rem 0 2rem 7rem; */
+    width: 80vw;
+    margin: 0 auto;
   }
   .content__image {
     grid-area: image;
